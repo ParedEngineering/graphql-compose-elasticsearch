@@ -27,8 +27,7 @@ export function getGeoDistanceITC<TContext>(
     opts.getOrCreateITC(subName, () => ({
       name: subName,
       fields: {
-        top_left: getGeoPointFC(opts),
-        bottom_right: getGeoPointFC(opts),
+        geo_point: getGeoPointFC(opts)
       },
     }))
   );
