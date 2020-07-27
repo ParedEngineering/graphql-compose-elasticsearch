@@ -6,7 +6,7 @@ import {
 } from 'graphql-compose';
 import { getTypeName, type CommonOpts, desc } from '../../../utils';
 import { getGeoPointAsFieldConfigMap } from '../../Commons/FieldNames';
-import { getGeoPointFC, getDistanceCalculationModeFC } from '../../Commons/Geo';
+import { getDistanceCalculationModeFC } from '../../Commons/Geo';
 
 export function getGeoDistanceITC<TContext>(
   opts: CommonOpts<TContext>
@@ -27,8 +27,9 @@ export function getGeoDistanceITC<TContext>(
     opts.getOrCreateITC(subName, () => ({
       name: subName,
       fields: {
-        geo_point: getGeoPointFC(opts)
-      },
+        lat: 'Float',
+        lon: 'Float'
+      }
     }))
   );
 

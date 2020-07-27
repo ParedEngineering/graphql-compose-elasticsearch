@@ -1,6 +1,6 @@
 {
-  "name": "graphql-compose-elasticsearch",
-  "version": "0.0.0-semantically-released",
+  "name": "@getpared/graphql-compose-elasticsearch",
+  "version": "4.0.7",
   "description": "Elastic search via GraphQL",
   "files": [
     "lib",
@@ -10,7 +10,7 @@
   "module": "mjs/index.mjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodkz/graphql-compose-elasticsearch.git"
+    "url": "https://github.com/ParedEngineering/graphql-compose-elasticsearch.git"
   },
   "keywords": [
     "graphql",
